@@ -1,0 +1,286 @@
+/*
+COLOR PALLET
+#FFFFFF - white
+#F7FFF7 - almost white
+#343434 - dark gray, almost black
+#2F3061 - blue dark
+#FFE66D - yellow
+#A1C6D7 - blue light
+#1789FC - dodger blue
+#296EB4 - spanish blue
+#FDB833 - honey yellow
+#FFD07B - orange yellow crayola
+#B1740F - gold
+*/
+
+/* Global Styles
+-------------------------- */
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Serif', serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background: #FFFFFF;
+}
+img {
+  width: 300px;
+}
+a {
+  color: #343434;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+h2 {
+  font-size: 45px;
+}
+h1, h2 {
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.divider {
+  border-bottom: 1px solid #343434;
+  padding: 25px 0;
+}
+/* Navigation
+-------------------------- */
+.nav {
+  left: -2px;
+  border: 2px solid #1789FC;
+  border-left-color: #FFFFFF;
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+  width: 8%;
+  background-color: #FFFFFF;
+  font-size: 25px;
+  height: 390px; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  text-decoration: none;
+}
+.nav li:hover {
+  font-weight: 750;
+}
+.nav a {
+  line-height: 40px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: 'Bebas Neue';
+}
+.first-about {
+  margin-top: 10px;
+}
+
+/* Profile
+-------------------------- */
+header {
+  background: #1789FC;
+  color: #F7FFF7;
+  /* text-align: center; */
+}
+
+/* Education & Skills
+-------------------------- */
+.education {
+  padding: 0;
+}
+.education-item {
+  /* display:grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px; */
+}
+.degrees h4, h5 {
+  display: inline;
+}
+.degrees p {
+  margin: 0;
+}
+.degrees-child {
+  display: inline-block;
+  margin-right: 60px;
+  /* padding: 15px; */
+}
+
+/* Skills
+-------------------------- */
+.skills {
+}
+.skills-list {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  padding-top: 0;
+}
+.skills-list ul {
+  list-style-type: square;
+}
+
+/* Characteristics
+-------------------------- */
+.characteristics {
+}
+
+/* Projects
+-------------------------- */
+.projects {
+}
+.projects a {
+  color: #2F3061;
+}
+.projects .btn {
+  color: #F7FFF7;
+  background: #2F3061;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+.projects .btn:hover{
+  background: rgba(47,48,97,80%);
+}
+.project-item {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 20px;
+  padding-top: 0px;
+}
+.project-item h4 {
+  margin: 0;
+}
+.project-item h5 {
+  margin: 0;
+}
+.project-item h6 {
+  margin: 0;
+}
+.project-item p {
+  margin: 5px;
+  margin-left: 0;
+}
+.img-terminal {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  width: 150%;
+  border: 1px solid transparent;
+  padding: 10px;
+  padding-left: 0;
+  padding-top: 70px;
+}
+.img-terminal:hover {
+  /* border: 1px solid #ADD8E6; */
+}
+.img-syringe {
+  display: block;
+  margin-left: 100px;
+  margin-right: auto;
+  width: 60%;
+  border: 1px solid transparent;
+  padding: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.img-syringe:hover {
+  /* border: 1px solid #ADD8E6; */
+}
+.img-orbit {
+  display: block;
+  margin-left: 80px;
+  margin-right: auto;
+  margin-top: 60px;
+  width: 90%;
+  border: 1px solid transparent;
+}
+.img-orbit:hover {
+  /* border: 1px solid #ADD8E6; */
+}
+/* Work Experience
+-------------------------- */
+.work-experience {
+}
+.job-item {
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+}
+.job-item ul {
+  list-style-type: square;
+}
+.job-item h4 {
+  margin: 0;
+}
+.job-item h5 {
+  margin: 0;
+}
+.job-summary{
+  list-style-type: square;
+}
+
+/* Athletics
+-------------------------- */
+.athletics-item {
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+}
+.athletics-item h3 {
+  margin-top: 70px;
+}
+.athletics-item h4 {
+  margin: 0;
+}
+.athletics-item p {
+  margin: 0;
+}
+.img-vball {
+  display: block;
+  margin-left: 0;
+  margin-top: 10px;
+  width: 50%;
+  border: 1px solid transparent;
+  padding: 0;
+  border-radius: 50%;
+}
+/* Awards
+-------------------------- */
+.award-item h3{
+  margin-bottom: 0;
+}
+.award-item h4 {
+  margin: 0;
+}
+.award-item p {
+  margin: 0;
+}
+/* Contact Info
+-------------------------- */
+footer {
+  background: #1789FC;
+  color: #F7FFF7;
+  /* text-align: center; */
+}
+footer a {
+  color: #F7FFF7
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  /* justify-content: center; */
+}
+.contact-list a {
+  padding-right: 15px;
+  display: inline-block;
+}
