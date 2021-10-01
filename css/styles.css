@@ -11,6 +11,7 @@ COLOR PALLET
 #FDB833 - honey yellow
 #FFD07B - orange yellow crayola
 #B1740F - gold
+#656565 - dark grey
 */
 
 /* Global Styles
@@ -19,19 +20,16 @@ body {
   color: #343434;
   margin: 0;
   padding: 0;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 15px;
   line-height: 1.5;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 img {
   width: 300px;
 }
 a {
   color: #343434;
-}
-a:hover {
-  text-decoration: none;
 }
 h1 {
   font-size: 100px;
@@ -40,31 +38,69 @@ h1 {
 h2 {
   font-size: 45px;
 }
-h1, h2 {
-  font-family: 'Bebas Neue';
+h1,
+h2 {
+  font-family: "Bebas Neue";
   font-weight: 400;
   margin: 0;
 }
+h3 {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 20px;
+}
+h4 {
+  margin: 0;
+  font-size: 17px;
+}
+h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #656565;
+}
+h6 {
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 100;
+  color: #656565;
+}
 .content-wrap {
-  width: 900px;
+  max-width: 900px;
+  width: 85%;
   margin: 0 auto;
   padding: 20px 0;
 }
 .divider {
   border-bottom: 1px solid #343434;
-  padding: 25px 0;
+}
+.plus {
+  list-style: none;
+}
+.plus a {
+  text-decoration: none;
+  color: gray;
+}
+.plus a:hover {
+  font-style: italic;
+}
+.plus:before {
+  content: "+";
+  margin-left: -19px;
+  padding-right: 9px;
 }
 /* Navigation
 -------------------------- */
 .nav {
   left: -2px;
-  border: 2px solid #1789FC;
-  border-left-color: #FFFFFF;
+  border: 2px solid #1789fc;
+  border-left-color: #ffffff;
   list-style-type: none;
   margin-top: 20px;
   padding: 0;
   width: 8%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 25px;
   height: 390px; /* Full height */
   position: fixed; /* Make it stick, even on scroll */
@@ -78,7 +114,7 @@ h1, h2 {
   line-height: 40px;
   margin-left: 10px;
   text-decoration: none;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
 }
 .first-about {
   margin-top: 10px;
@@ -87,39 +123,33 @@ h1, h2 {
 /* Profile
 -------------------------- */
 header {
-  background: #1789FC;
-  color: #F7FFF7;
+  background: #1789fc;
+  color: #f7fff7;
   /* text-align: center; */
 }
 
-/* Education & Skills
+/* Education
 -------------------------- */
 .education {
   padding: 0;
 }
-.education-item {
-  /* display:grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 20px; */
+.degrees-content h5,
+.degrees-content h6 {
+  display: inline-block;
+  margin-bottom: 0;
 }
-.degrees h4, h5 {
-  display: inline;
-}
-.degrees p {
+.degrees-content p {
   margin: 0;
 }
 .degrees-child {
   display: inline-block;
   margin-right: 60px;
-  /* padding: 15px; */
 }
 
 /* Skills
 -------------------------- */
-.skills {
-}
-.skills-list {
-  display:grid;
+.skills-content {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 20px;
   padding-top: 0;
@@ -127,160 +157,164 @@ header {
 .skills-list ul {
   list-style-type: square;
 }
-
-/* Characteristics
--------------------------- */
-.characteristics {
+.skills-time ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 /* Projects
 -------------------------- */
-.projects {
-}
-.projects a {
-  color: #2F3061;
-}
 .projects .btn {
-  color: #F7FFF7;
-  background: #2F3061;
+  color: #f7fff7;
+  background: #2f3061;
   text-decoration: none;
-  padding: 8px;
+  /* padding: 8px; */
   border-radius: 4px;
 }
-.projects .btn:hover{
-  background: rgba(47,48,97,80%);
+.projects .btn:hover {
+  background: rgba(47, 48, 97, 80%);
 }
-.project-item {
-  display:grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 20px;
-  padding-top: 0px;
-}
-.project-item h4 {
-  margin: 0;
-}
-.project-item h5 {
-  margin: 0;
-}
-.project-item h6 {
-  margin: 0;
-}
-.project-item p {
+
+.project-content p {
   margin: 5px;
   margin-left: 0;
 }
-.img-terminal {
-  display: block;
-  margin-left: 0;
-  margin-right: auto;
-  width: 150%;
-  border: 1px solid transparent;
-  padding: 10px;
-  padding-left: 0;
-  padding-top: 70px;
-}
-.img-terminal:hover {
-  /* border: 1px solid #ADD8E6; */
-}
-.img-syringe {
-  display: block;
-  margin-left: 100px;
-  margin-right: auto;
-  width: 60%;
-  border: 1px solid transparent;
-  padding: 25px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.img-syringe:hover {
-  /* border: 1px solid #ADD8E6; */
-}
-.img-orbit {
-  display: block;
-  margin-left: 80px;
-  margin-right: auto;
-  margin-top: 60px;
-  width: 90%;
-  border: 1px solid transparent;
-}
-.img-orbit:hover {
-  /* border: 1px solid #ADD8E6; */
-}
-/* Work Experience
--------------------------- */
-.work-experience {
-}
-.job-item {
-  display:grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 20px;
-}
-.job-item ul {
+.project-content ul {
   list-style-type: square;
 }
-.job-item h4 {
-  margin: 0;
+.img-terminal {
+  display: block;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.job-item h5 {
-  margin: 0;
+
+.img-syringe {
+  display: block;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.job-summary{
+
+.img-orbit {
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.work-experience {
+}
+
+.job-content ul {
   list-style-type: square;
 }
 
 /* Athletics
 -------------------------- */
-.athletics-item {
-  display:grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 20px;
-}
-.athletics-item h3 {
-  margin-top: 70px;
-}
-.athletics-item h4 {
+.athletics-content p {
   margin: 0;
 }
-.athletics-item p {
-  margin: 0;
+.athletics-content ul {
+  list-style-type: square;
 }
 .img-vball {
   display: block;
-  margin-left: 0;
+  margin: auto;
   margin-top: 10px;
+  margin-bottom: 20px;
   width: 50%;
-  border: 1px solid transparent;
   padding: 0;
   border-radius: 50%;
 }
 /* Awards
 -------------------------- */
-.award-item h3{
+.award-content h3 {
   margin-bottom: 0;
 }
-.award-item h4 {
+.award-content h4 {
   margin: 0;
 }
-.award-item p {
+.award-content p {
   margin: 0;
+}
+.awards-details h5 {
+  margin-left: 5px;
+}
+.awards-details h4,
+.awards-details h5 {
+  display: inline-block;
+}
+.awards-details {
+  margin-bottom: 10px;
 }
 /* Contact Info
 -------------------------- */
 footer {
-  background: #1789FC;
-  color: #F7FFF7;
+  background: #1789fc;
+  color: #f7fff7;
   /* text-align: center; */
 }
 footer a {
-  color: #F7FFF7
+  color: #f7fff7;
 }
 .contact-list {
   list-style-type: none;
   padding: 0;
-  display: flex;
-  /* justify-content: center; */
 }
 .contact-list a {
   padding-right: 15px;
   display: inline-block;
+  text-decoration: none;
+}
+.contact-list a:hover {
+  text-decoration: underline;
+}
+/* Responsive
+-------------------------- */
+@media screen and (min-width: 750px) {
+  .project-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+    padding-top: 0px;
+  }
+  .job-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .athletics-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+  }
+  .img-syringe {
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  h1 {
+    font-size: 75px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .skills-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding-top: 0;
+  }
 }
