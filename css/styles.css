@@ -31,6 +31,9 @@ img {
 a {
   color: #343434;
 }
+ul {
+  list-style-type: square;
+}
 h1 {
   font-size: 100px;
   line-height: 1;
@@ -90,6 +93,9 @@ h6 {
   margin-left: -19px;
   padding-right: 9px;
 }
+.fab:hover {
+  font-size: 1.1em;
+}
 /* Navigation
 -------------------------- */
 .nav {
@@ -126,6 +132,9 @@ header {
   background: #1789fc;
   color: #f7fff7;
   /* text-align: center; */
+}
+header a {
+  color: #f7fff7;
 }
 
 /* Education
@@ -226,6 +235,13 @@ header {
 .athletics-content ul {
   list-style-type: square;
 }
+.athletics-content h3 {
+  margin-top: 40px;
+}
+.athletics-content h5,
+.athletics-content h6 {
+  display: inline-block;
+}
 .img-vball {
   display: block;
   margin: auto;
@@ -276,7 +292,7 @@ footer a {
   text-decoration: none;
 }
 .contact-list a:hover {
-  text-decoration: underline;
+  font-weight: 900;
 }
 /* Responsive
 -------------------------- */
