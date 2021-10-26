@@ -155,7 +155,7 @@ header a {
   margin-right: 60px;
 }
 
-/* Skills
+/* Skills Languages
 -------------------------- */
 .skills-content {
   display: grid;
@@ -171,6 +171,19 @@ header a {
   padding: 0;
 }
 
+/* Skills
+-------------------------- */
+.skills-equipment-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 2fr;
+  column-gap: 10px;
+  padding-top: 0;
+}
+
+.skills-equipment-time ul {
+  list-style-type: none;
+  padding: 0;
+}
 /* Projects
 -------------------------- */
 .projects .btn {
@@ -202,6 +215,22 @@ header a {
 .img-syringe {
   display: block;
   width: 60%;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.img-pump {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.img-microfluidic {
+  display: block;
+  width: 20%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -320,7 +349,7 @@ footer a {
     display: block;
     width: 60%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 0;
     margin-bottom: 0;
   }
 }
